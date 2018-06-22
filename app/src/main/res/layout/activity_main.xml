@@ -1,16 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.c4q.seeds.MainActivity">
 
-   <Button
-       android:id="@+id/sign_in"
-       android:text="Sign In "
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/seeds"
+        android:textColor="#D3D3D3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Seeds of "
+        android:textSize="50sp"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:layout_editor_absoluteY="154dp" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/srq"
+        android:textColor="#D3D3D3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:gravity="center"
+        android:text="SRQ"
+        android:textSize="50sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seeds"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/english_button"
+        android:background="@drawable/shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:text="English"
+       />
+
+    <!--<Button-->
+        <!--android:id="@+id/spanish_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Espanol"-->
+        <!--tools:layout_editor_absoluteX="210dp"-->
+        <!--tools:layout_editor_absoluteY="383dp" />-->
+
+
+</LinearLayout>
