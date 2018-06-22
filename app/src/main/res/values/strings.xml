@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Seeds</string>
     <string name="title_activity_seeds">SeedsActivity</string>
+    <string name="name">Name</string>
 </resources>
