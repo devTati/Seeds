@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.c4q.seeds.R;
+import com.example.c4q.seeds.model.Seeds;
 
 /**
  * Created by c4q on 6/21/18.
@@ -12,7 +13,7 @@ import com.example.c4q.seeds.R;
 
 public class SeedsViewHolder extends RecyclerView.ViewHolder {
 
-TextView name, address, cityAndState, hour, requirements;
+    public TextView name, address, cityAndState, hour, requirements;
 
     public SeedsViewHolder(View itemView) {
         super(itemView);
@@ -23,5 +24,13 @@ TextView name, address, cityAndState, hour, requirements;
         hour = itemView.findViewById(R.id.hour);
         requirements = itemView.findViewById(R.id.requirements);
 
+    }
+
+    public void onBind(Seeds seeds) {
+        address.setText(seeds.getAddress());
+        name.setText(seeds.getName());
+        cityAndState.setText(seeds.getCityAndState());
+        hour.setText(seeds.getHours());
+        requirements.setText(seeds.getRequirements());
     }
 }

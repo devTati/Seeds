@@ -7,19 +7,23 @@ package com.example.c4q.seeds.model;
 public class Seeds {
 
     private String name;
+
     private String address;
     private String cityAndState;
     private String hours;
     private String requirements;
+    private String phoneNumber;
 
 
 
-    public Seeds(String name, String address, String cityAndState, String hours, String requirements) {
+
+    public Seeds(String name, String address, String cityAndState, String hours, String requirements, String phoneNumber) {
         this.name = name;
         this.address = address;
         this.cityAndState = cityAndState;
         this.hours = hours;
         this.requirements = requirements;
+        this.phoneNumber = phoneNumber;
     }
 
     public String getName() {
@@ -60,5 +64,13 @@ public class Seeds {
 
     public void setRequirements(String requirements) {
         this.requirements = requirements;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }
