@@ -2,6 +2,7 @@ package com.example.c4q.seeds.rv;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.c4q.seeds.R;
@@ -14,6 +15,7 @@ import com.example.c4q.seeds.model.Seeds;
 public class SeedsViewHolder extends RecyclerView.ViewHolder {
 
     public TextView name, address, cityAndState, hour, requirements;
+    ImageView imageView;
 
     public SeedsViewHolder(View itemView) {
         super(itemView);
@@ -23,6 +25,8 @@ public class SeedsViewHolder extends RecyclerView.ViewHolder {
         cityAndState = itemView.findViewById(R.id.cityAndState);
         hour = itemView.findViewById(R.id.hour);
         requirements = itemView.findViewById(R.id.requirements);
+        imageView = itemView.findViewById(R.id.image);
+
 
     }
 
@@ -32,5 +36,6 @@ public class SeedsViewHolder extends RecyclerView.ViewHolder {
         cityAndState.setText(seeds.getCityAndState());
         hour.setText(seeds.getHours());
         requirements.setText(seeds.getRequirements());
+        imageView.setImageResource(R.drawable.church1);
     }
 }
