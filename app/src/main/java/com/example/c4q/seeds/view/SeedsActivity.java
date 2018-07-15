@@ -23,20 +23,7 @@ public class SeedsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seeds);
 
-        List<Seeds> seedsList = new ArrayList<>();
 
-        Seeds seeds1 = new Seeds("Church of the Palms", "3224 Beed RidgeRd", "Sarasota, FL", "Monday-Friday 10AM-4PM", "N/A", "(941) 924-1323");
-        Seeds seeds2 = new Seeds("All Faiths Food Bank", "8171 Blaikie Ct", "Sarasota, FL", "Call for hours of operation", "N/A","(941) 379-6333");
-        Seeds seeds3 = new Seeds("First Church of the Nazarene", "3375 Fruitville Road", "Sarasota, FL", "Call for hours of opertaion", "N/A","(941) 365-2654");
-
-        seedsList.add(seeds1);
-        seedsList.add(seeds2);
-        seedsList.add(seeds3);
-
-        RecyclerView recyclerView = findViewById(R.id.rv);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-        SeedsAdapter seedsAdapter = new SeedsAdapter(seedsList);
-        recyclerView.setAdapter(seedsAdapter);
 
     }
 
